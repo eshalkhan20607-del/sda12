@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabTrack - Equipment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">⚗</div>
+            <div>
+                <h2>LabTrack</h2>
+                <span>LAB MANAGEMENT</span>
+            </div>
+        </div>
+
+        <nav>
+
+            <p class="nav-title">MAIN MENU</p>
+
+            <a href="dashboard.html" class="nav-link">
+                <span>▣</span> Dashboard
+            </a>
+
+            <a href="equipment.html" class="nav-link active">
+                <span>⚙</span> Equipment
+            </a>
+
+            <a href="borrowing.html" class="nav-link">
+                <span>▤</span> Borrowing Details
+            </a>
+
+            <a href="lost-found.html" class="nav-link">
+                <span>⌕</span> Lost & Found
+            </a>
+
+            <p class="nav-title">ACCOUNT</p>
+
+            <a href="index.html" class="nav-link logout">
+                <span>↪</span> Logout
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="admin-avatar">AA</div>
+            <div>
+                <strong>Amina Amjad</strong>
+                <small>Student</small>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Lab Equipment</h1>
+                <p>Browse and find laboratory equipment.</p>
+            </div>
+
+            <div class="profile">
+                <div class="notification">♢</div>
+                <div class="avatar">AA</div>
+                <div>
+                    <strong>Amina Amjad</strong>
+                    <small>Student ID: 2025-SE-2</small>
+                </div>
+            </div>
+
+        </header>
+
+
+        <section class="content">
+
+            <!-- EQUIPMENT HEADER -->
+            <div class="page-banner">
+
+                <div>
+                    <span class="banner-label">EQUIPMENT CATALOG</span>
+                    <h2>Find the equipment you need</h2>
+                    <p>Explore our laboratory collection and check availability.</p>
+                </div>
+
+                <div class="banner-number">
+                    <strong>128</strong>
+                    <span>Total Items</span>
+                </div>
+
+            </div>
+
+
+            <!-- SEARCH -->
+            <div class="search-section">
+
+                <div class="search-box">
+                    <span>⌕</span>
+                    <input type="text" placeholder="Search equipment by name or ID...">
+                </div>
+
+                <select>
+                    <option>All Categories</option>
+                    <option>Electronics</option>
+                    <option>Computing</option>
+                    <option>Mechanical</option>
+                    <option>Measurement</option>
+                </select>
+
+                <select>
+                    <option>All Status</option>
+                    <option>Available</option>
+                    <option>Borrowed</option>
+                </select>
+
+            </div>
+
+
+            <!-- CATEGORY TABS -->
+            <div class="category-tabs">
+
+                <a href="#" class="category active-category">All Equipment</a>
+                <a href="#" class="category">Electronics</a>
+                <a href="#" class="category">Computing</a>
+                <a href="#" class="category">Measurement</a>
+                <a href="#" class="category">Mechanical</a>
+
+            </div>
+
+
+            <!-- EQUIPMENT CARDS -->
+            <div class="equipment-grid">
+
+                <div class="equipment-card">
+
+                    <div class="equipment-image microscope">
+                        ⚗
+                        <span class="available-dot"></span>
+                    </div>
+
+                    <div class="equipment-content">
+
+                        <div class="card-top">
+                            <span class="equipment-category">Electronics</span>
+                            <span class="status available">Available</span>
+                        </div>
+
+                        <h3>Digital Oscilloscope</h3>
+
+                        <p class="equipment-id">ID: EQ-1042</p>
+
+                        <div class="equipment-details">
+                            <span>📦 Qty: 4</span>
+                            <span>📍 Lab 204</span>
+                        </div>
+
+                        <a href="#" class="borrow-btn">Borrow Equipment</a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="equipment-card">
+
+                    <div class="equipment-image laptop">
+                        ▣
+                        <span class="available-dot"></span>
+                    </div>
+
+                    <div class="equipment-content">
+
+                        <div class="card-top">
+                            <span class="equipment-category">Computing</span>
+                            <span class="status available">Available</span>
+                        </div>
+
+                        <h3>Arduino Uno Kit</h3>
+
+                        <p class="equipment-id">ID: EQ-0987</p>
+
+                        <div class="equipment-details">
+                            <span>📦 Qty: 12</span>
+                            <span>📍 Lab 201</span>
+                        </div>
+
+                        <a href="#" class="borrow-btn">Borrow Equipment</a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="equipment-card">
+
+                    <div class="equipment-image meter">
+                        ◉
+                        <span class="available-dot"></span>
+                    </div>
+
+                    <div class="equipment-content">
+
+                        <div class="card-top">
+                            <span class="equipment-category">Measurement</span>
+                            <span class="status available">Available</span>
+                        </div>
+
+                        <h3>Digital Multimeter</h3>
+
+                        <p class="equipment-id">ID: EQ-1031</p>
+
+                        <div class="equipment-details">
+                            <span>📦 Qty: 8</span>
+                            <span>📍 Lab 203</span>
+                        </div>
+
+                        <a href="#" class="borrow-btn">Borrow Equipment</a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="equipment-card">
+
+                    <div class="equipment-image laptop">
+                        ▰
+                        <span class="available-dot"></span>
+                    </div>
+
+                    <div class="equipment-content">
+
+                        <div class="card-top">
+                            <span class="equipment-category">Computing</span>
+                            <span class="status borrowed">Borrowed</span>
+                        </div>
+
+                        <h3>Raspberry Pi 4 Kit</h3>
+
+                        <p class="equipment-id">ID: EQ-1055</p>
+
+                        <div class="equipment-details">
+                            <span>📦 Qty: 2</span>
+                            <span>📍 Lab 201</span>
+                        </div>
+
+                        <a href="#" class="borrow-btn disabled-btn">Currently Borrowed</a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="equipment-card">
+
+                    <div class="equipment-image mechanical">
+                        ⚙
+                        <span class="available-dot"></span>
+                    </div>
+
+                    <div class="equipment-content">
+
+                        <div class="card-top">
+                            <span class="equipment-category">Mechanical</span>
+                            <span class="status available">Available</span>
+                        </div>
+
+                        <h3>Vernier Caliper</h3>
+
+                        <p class="equipment-id">ID: EQ-0912</p>
+
+                        <div class="equipment-details">
+                            <span>📦 Qty: 6</span>
+                            <span>📍 Lab 202</span>
+                        </div>
+
+                        <a href="#" class="borrow-btn">Borrow Equipment</a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="equipment-card">
+
+                    <div class="equipment-image microscope">
+                        ◉
+                        <span class="available-dot"></span>
+                    </div>
+
+                    <div class="equipment-content">
+
+                        <div class="card-top">
+                            <span class="equipment-category">Electronics</span>
+                            <span class="status available">Available</span>
+                        </div>
+
+                        <h3>Function Generator</h3>
+
+                        <p class="equipment-id">ID: EQ-1078</p>
+
+                        <div class="equipment-details">
+                            <span>📦 Qty: 5</span>
+                            <span>📍 Lab 204</span>
+                        </div>
+
+                        <a href="#" class="borrow-btn">Borrow Equipment</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
