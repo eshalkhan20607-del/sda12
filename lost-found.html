@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabTrack - Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">⚗</div>
+            <div>
+                <h2>LabTrack</h2>
+                <span>LAB MANAGEMENT</span>
+            </div>
+        </div>
+
+        <nav>
+
+            <p class="nav-title">MAIN MENU</p>
+
+            <a href="dashboard.html" class="nav-link">
+                <span>▣</span> Dashboard
+            </a>
+
+            <a href="equipment.html" class="nav-link">
+                <span>⚙</span> Equipment
+            </a>
+
+            <a href="borrowing.html" class="nav-link">
+                <span>▤</span> Borrowing Details
+            </a>
+
+            <a href="lost-found.html" class="nav-link active">
+                <span>⌕</span> Lost & Found
+            </a>
+
+            <p class="nav-title">ACCOUNT</p>
+
+            <a href="index.html" class="nav-link logout">
+                <span>↪</span> Logout
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="admin-avatar">AA</div>
+            <div>
+                <strong>Amina Amjad</strong>
+                <small>Student</small>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Lost & Found</h1>
+                <p>Report and find lost laboratory items.</p>
+            </div>
+
+            <div class="profile">
+                <div class="notification">♢</div>
+                <div class="avatar">AA</div>
+                <div>
+                    <strong>Amina Amjad</strong>
+                    <small>Student ID: 2025-SE-2</small>
+                </div>
+            </div>
+
+        </header>
+
+
+        <section class="content">
+
+            <!-- HERO -->
+            <div class="lost-hero">
+
+                <div>
+                    <span class="banner-label">LOST & FOUND CENTER</span>
+                    <h2>Help us keep the lab organized</h2>
+                    <p>
+                        Lost something? Report it here. Found an item?
+                        Help return it to its owner.
+                    </p>
+                </div>
+
+                <div class="lost-symbol">
+                    ⌕
+                </div>
+
+            </div>
+
+
+            <!-- REPORT FORMS -->
+            <div class="report-grid">
+
+                <div class="report-card lost-card">
+
+                    <div class="report-heading">
+                        <div class="report-icon red-icon">!</div>
+                        <div>
+                            <h3>Report Lost Item</h3>
+                            <p>Tell us about an item you have lost.</p>
+                        </div>
+                    </div>
+
+                    <form>
+
+                        <label>Item Name</label>
+                        <input type="text" placeholder="e.g. Digital Multimeter">
+
+                        <label>Last Seen Location</label>
+                        <select>
+                            <option>Select location</option>
+                            <option>Lab 201</option>
+                            <option>Lab 202</option>
+                            <option>Lab 203</option>
+                            <option>Lab 204</option>
+                            <option>Laboratory Corridor</option>
+                        </select>
+
+                        <label>Date Lost</label>
+                        <input type="date">
+
+                        <label>Description</label>
+                        <textarea placeholder="Describe the item..."></textarea>
+
+                        <button type="submit" class="report-btn red-btn">
+                            Submit Lost Report
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <div class="report-card found-card">
+
+                    <div class="report-heading">
+                        <div class="report-icon green-icon">✓</div>
+                        <div>
+                            <h3>Report Found Item</h3>
+                            <p>Found something? Let us know.</p>
+                        </div>
+                    </div>
+
+                    <form>
+
+                        <label>Item Name</label>
+                        <input type="text" placeholder="e.g. USB Cable">
+
+                        <label>Found Location</label>
+                        <select>
+                            <option>Select location</option>
+                            <option>Lab 201</option>
+                            <option>Lab 202</option>
+                            <option>Lab 203</option>
+                            <option>Lab 204</option>
+                            <option>Laboratory Corridor</option>
+                        </select>
+
+                        <label>Date Found</label>
+                        <input type="date">
+
+                        <label>Description</label>
+                        <textarea placeholder="Describe the item..."></textarea>
+
+                        <button type="submit" class="report-btn green-btn">
+                            Submit Found Report
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+            <!-- REPORTS -->
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h3>Recent Reports</h3>
+                        <p>Recently reported lost and found items</p>
+                    </div>
+
+                    <div class="report-filter">
+                        <a href="#" class="filter-active">All</a>
+                        <a href="#">Lost</a>
+                        <a href="#">Found</a>
+                    </div>
+
+                </div>
+
+
+                <div class="lost-items-grid">
+
+                    <div class="lost-item">
+
+                        <div class="lost-item-icon red-bg">🎧</div>
+
+                        <div class="lost-item-info">
+
+                            <div class="item-title">
+                                <h4>Black Headphones</h4>
+                                <span class="badge red-badge">Lost</span>
+                            </div>
+
+                            <p>
+                                Black wireless headphones with a small
+                                scratch on the side.
+                            </p>
+
+                            <div class="item-meta">
+                                📍 Lab 203 &nbsp;&nbsp; 📅 Oct 02, 2026
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="contact-btn">View</a>
+
+                    </div>
+
+
+                    <div class="lost-item">
+
+                        <div class="lost-item-icon green-bg">🔌</div>
+
+                        <div class="lost-item-info">
+
+                            <div class="item-title">
+                                <h4>USB-C Cable</h4>
+                                <span class="badge green-badge">Found</span>
+                            </div>
+
+                            <p>
+                                White USB-C cable found near the
+                                electronics workstation.
+                            </p>
+
+                            <div class="item-meta">
+                                📍 Lab 204 &nbsp;&nbsp; 📅 Oct 01, 2026
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="contact-btn">View</a>
+
+                    </div>
+
+
+                    <div class="lost-item">
+
+                        <div class="lost-item-icon red-bg">📱</div>
+
+                        <div class="lost-item-info">
+
+                            <div class="item-title">
+                                <h4>Scientific Calculator</h4>
+                                <span class="badge red-badge">Lost</span>
+                            </div>
+
+                            <p>
+                                Casio scientific calculator with
+                                student initials on the back.
+                            </p>
+
+                            <div class="item-meta">
+                                📍 Lab 202 &nbsp;&nbsp; 📅 Sep 29, 2026
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="contact-btn">View</a>
+
+                    </div>
+
+
+                    <div class="lost-item">
+
+                        <div class="lost-item-icon green-bg">🔧</div>
+
+                        <div class="lost-item-info">
+
+                            <div class="item-title">
+                                <h4>Small Screwdriver Set</h4>
+                                <span class="badge green-badge">Found</span>
+                            </div>
+
+                            <p>
+                                Small precision screwdriver set
+                                found near the storage cabinet.
+                            </p>
+
+                            <div class="item-meta">
+                                📍 Lab 201 &nbsp;&nbsp; 📅 Sep 27, 2026
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="contact-btn">View</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
