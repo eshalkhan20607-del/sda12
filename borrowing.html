@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabTrack - Borrowing Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">⚗</div>
+            <div>
+                <h2>LabTrack</h2>
+                <span>LAB MANAGEMENT</span>
+            </div>
+        </div>
+
+        <nav>
+
+            <p class="nav-title">MAIN MENU</p>
+
+            <a href="dashboard.html" class="nav-link">
+                <span>▣</span> Dashboard
+            </a>
+
+            <a href="equipment.html" class="nav-link">
+                <span>⚙</span> Equipment
+            </a>
+
+            <a href="borrowing.html" class="nav-link active">
+                <span>▤</span> Borrowing Details
+            </a>
+
+            <a href="lost-found.html" class="nav-link">
+                <span>⌕</span> Lost & Found
+            </a>
+
+            <p class="nav-title">ACCOUNT</p>
+
+            <a href="index.html" class="nav-link logout">
+                <span>↪</span> Logout
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="admin-avatar">AA</div>
+            <div>
+                <strong>Amina Amjad</strong>
+                <small>Student</small>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Borrowing Details</h1>
+                <p>Manage your borrowed laboratory equipment.</p>
+            </div>
+
+            <div class="profile">
+                <div class="notification">♢</div>
+                <div class="avatar">AA</div>
+                <div>
+                    <strong>Amina Amjad</strong>
+                    <small>Student ID: 2025-SE-2</small>
+                </div>
+            </div>
+
+        </header>
+
+
+        <section class="content">
+
+            <!-- SUMMARY -->
+            <div class="borrow-summary">
+
+                <div class="summary-card">
+                    <div class="summary-icon blue">▤</div>
+                    <div>
+                        <span>Active Borrowings</span>
+                        <strong>3</strong>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon orange">◷</div>
+                    <div>
+                        <span>Due This Week</span>
+                        <strong>2</strong>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon red">!</div>
+                    <div>
+                        <span>Overdue</span>
+                        <strong>1</strong>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon green">✓</div>
+                    <div>
+                        <span>Total Returned</span>
+                        <strong>18</strong>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- ACTIVE BORROWINGS -->
+            <div class="panel table-panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h3>Current Borrowings</h3>
+                        <p>Equipment currently assigned to you</p>
+                    </div>
+
+                    <a href="equipment.html" class="small-action">
+                        + Borrow New Equipment
+                    </a>
+
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Equipment</th>
+                                <th>Equipment ID</th>
+                                <th>Borrow Date</th>
+                                <th>Due Date</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <div class="table-equipment">
+                                        <div class="table-icon blue-bg">⚗</div>
+                                        <div>
+                                            <strong>Digital Oscilloscope</strong>
+                                            <small>Electronics</small>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>EQ-1042</td>
+                                <td>02 Oct 2026</td>
+                                <td>09 Oct 2026</td>
+
+                                <td>
+                                    <span class="badge orange-badge">Borrowed</span>
+                                </td>
+
+                                <td>
+                                    <a href="#" class="return-btn">Return</a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <div class="table-equipment">
+                                        <div class="table-icon purple-bg">◉</div>
+                                        <div>
+                                            <strong>Function Generator</strong>
+                                            <small>Electronics</small>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>EQ-1078</td>
+                                <td>01 Oct 2026</td>
+                                <td>08 Oct 2026</td>
+
+                                <td>
+                                    <span class="badge orange-badge">Borrowed</span>
+                                </td>
+
+                                <td>
+                                    <a href="#" class="return-btn">Return</a>
+                                </td>
+                            </tr>
+
+
+                            <tr class="overdue-row">
+
+                                <td>
+                                    <div class="table-equipment">
+                                        <div class="table-icon red-bg">⚙</div>
+                                        <div>
+                                            <strong>Vernier Caliper</strong>
+                                            <small>Mechanical</small>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>EQ-0912</td>
+                                <td>25 Sep 2026</td>
+                                <td>02 Oct 2026</td>
+
+                                <td>
+                                    <span class="badge red-badge">Overdue</span>
+                                </td>
+
+                                <td>
+                                    <a href="#" class="return-btn urgent">Return Now</a>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+            <!-- HISTORY -->
+            <div class="panel table-panel history-panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h3>Borrowing History</h3>
+                        <p>Your previous equipment transactions</p>
+                    </div>
+
+                    <a href="#">View All →</a>
+
+                </div>
+
+
+                <div class="history-list">
+
+                    <div class="history-item">
+
+                        <div class="history-icon green-bg">✓</div>
+
+                        <div class="history-info">
+                            <strong>Digital Multimeter</strong>
+                            <span>EQ-1031 • Borrowed Sep 28, 2026</span>
+                        </div>
+
+                        <div>
+                            <span class="badge green-badge">Returned</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="history-item">
+
+                        <div class="history-icon green-bg">✓</div>
+
+                        <div class="history-info">
+                            <strong>Arduino Uno Kit</strong>
+                            <span>EQ-0987 • Borrowed Sep 25, 2026</span>
+                        </div>
+
+                        <div>
+                            <span class="badge green-badge">Returned</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="history-item">
+
+                        <div class="history-icon green-bg">✓</div>
+
+                        <div class="history-info">
+                            <strong>Digital Caliper</strong>
+                            <span>EQ-0876 • Borrowed Sep 18, 2026</span>
+                        </div>
+
+                        <div>
+                            <span class="badge green-badge">Returned</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
