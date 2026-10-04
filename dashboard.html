@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabTrack - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">⚗</div>
+            <div>
+                <h2>LabTrack</h2>
+                <span>LAB MANAGEMENT</span>
+            </div>
+        </div>
+
+        <nav>
+
+            <p class="nav-title">MAIN MENU</p>
+
+            <a href="dashboard.html" class="nav-link active">
+                <span>▣</span> Dashboard
+            </a>
+
+            <a href="equipment.html" class="nav-link">
+                <span>⚙</span> Equipment
+            </a>
+
+            <a href="borrowing.html" class="nav-link">
+                <span>▤</span> Borrowing Details
+            </a>
+
+            <a href="lost-found.html" class="nav-link">
+                <span>⌕</span> Lost & Found
+            </a>
+
+            <p class="nav-title">ACCOUNT</p>
+
+            <a href="index.html" class="nav-link logout">
+                <span>↪</span> Logout
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="admin-avatar">AA</div>
+            <div>
+                <strong>Amina Amjad</strong>
+                <small>Student</small>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Dashboard</h1>
+                <p>Welcome back, Amina! Here's your lab overview.</p>
+            </div>
+
+            <div class="profile">
+                <div class="notification">♢</div>
+                <div class="avatar">AA</div>
+                <div>
+                    <strong>Amina Amjad</strong>
+                    <small>Student ID: 2025-SE-2</small>
+                </div>
+            </div>
+
+        </header>
+
+
+        <section class="content">
+
+            <!-- WELCOME -->
+            <div class="welcome-card">
+
+                <div>
+                    <span class="welcome-label">GOOD MORNING 👋</span>
+                    <h2>Ready for your next lab?</h2>
+                    <p>
+                        Check available equipment or view your current borrowing records.
+                    </p>
+
+                    <div class="welcome-buttons">
+                        <a href="equipment.html" class="primary-btn">
+                            Browse Equipment →
+                        </a>
+
+                        <a href="borrowing.html" class="secondary-btn">
+                            My Borrowings
+                        </a>
+                    </div>
+                </div>
+
+                <div class="welcome-icon">
+                    ⚗
+                </div>
+
+            </div>
+
+
+            <!-- STATS -->
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-icon blue">⚙</div>
+                    <div>
+                        <span>Total Equipment</span>
+                        <h2>128</h2>
+                        <small class="positive">↑ 8 new this semester</small>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon green">✓</div>
+                    <div>
+                        <span>Available</span>
+                        <h2>94</h2>
+                        <small class="positive">73% available</small>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon orange">▤</div>
+                    <div>
+                        <span>Active Borrowings</span>
+                        <h2>3</h2>
+                        <small>2 due this week</small>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon red">!</div>
+                    <div>
+                        <span>Overdue</span>
+                        <h2>1</h2>
+                        <small class="danger">Needs attention</small>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- LOWER CONTENT -->
+            <div class="dashboard-grid">
+
+                <!-- RECENT -->
+                <div class="panel">
+
+                    <div class="panel-header">
+                        <div>
+                            <h3>Recent Borrowings</h3>
+                            <p>Your latest equipment activity</p>
+                        </div>
+
+                        <a href="borrowing.html">View All →</a>
+                    </div>
+
+                    <div class="activity">
+
+                        <div class="activity-row">
+                            <div class="equipment-small blue-bg">⚗</div>
+                            <div class="activity-info">
+                                <strong>Digital Oscilloscope</strong>
+                                <span>Equipment ID: EQ-1042</span>
+                            </div>
+                            <div class="activity-date">
+                                <strong>Oct 02, 2026</strong>
+                                <span class="badge orange-badge">Borrowed</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-row">
+                            <div class="equipment-small purple-bg">⌁</div>
+                            <div class="activity-info">
+                                <strong>Digital Multimeter</strong>
+                                <span>Equipment ID: EQ-1031</span>
+                            </div>
+                            <div class="activity-date">
+                                <strong>Sep 28, 2026</strong>
+                                <span class="badge green-badge">Returned</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-row">
+                            <div class="equipment-small green-bg">▣</div>
+                            <div class="activity-info">
+                                <strong>Arduino Uno Kit</strong>
+                                <span>Equipment ID: EQ-0987</span>
+                            </div>
+                            <div class="activity-date">
+                                <strong>Sep 25, 2026</strong>
+                                <span class="badge green-badge">Returned</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- QUICK ACTIONS -->
+                <div class="panel">
+
+                    <div class="panel-header">
+                        <div>
+                            <h3>Quick Actions</h3>
+                            <p>Frequently used options</p>
+                        </div>
+                    </div>
+
+                    <div class="quick-actions">
+
+                        <a href="equipment.html" class="quick-card">
+                            <div class="quick-icon blue">⚙</div>
+                            <div>
+                                <strong>Find Equipment</strong>
+                                <span>Browse available items</span>
+                            </div>
+                            <b>→</b>
+                        </a>
+
+                        <a href="borrowing.html" class="quick-card">
+                            <div class="quick-icon orange">▤</div>
+                            <div>
+                                <strong>My Borrowings</strong>
+                                <span>View borrowed equipment</span>
+                            </div>
+                            <b>→</b>
+                        </a>
+
+                        <a href="lost-found.html" class="quick-card">
+                            <div class="quick-icon purple">⌕</div>
+                            <div>
+                                <strong>Lost & Found</strong>
+                                <span>Report or find an item</span>
+                            </div>
+                            <b>→</b>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FOOTER INFO -->
+            <div class="info-strip">
+                <div>
+                    <strong>Laboratory Hours</strong>
+                    <span>Monday - Friday &nbsp; | &nbsp; 9:00 AM - 5:00 PM</span>
+                </div>
+
+                <div>
+                    <strong>Lab Assistant</strong>
+                    <span>Room 204 &nbsp; | &nbsp; Ext. 123</span>
+                </div>
+
+                <div>
+                    <strong>Need Help?</strong>
+                    <span>Contact Laboratory Administration</span>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
